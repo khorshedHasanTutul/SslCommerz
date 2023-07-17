@@ -1,0 +1,14 @@
+﻿@model Dictionary<string, string>
+
+<article class="message is-success">
+    <div class="message-header">
+        <p>Payment has been successfully processed. <a href="/">Return to home</a>.</p>
+    </div>
+    <div class="message-body">
+        @foreach (var prop in Model)
+        {
+            <code>@prop.Key: @prop.Value</code>
+            <br>
+        }
+    </div>
+</article>
